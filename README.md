@@ -11,10 +11,7 @@
 大家使用gitbook来进行管理草稿，最后可以由gitbook生成电子阅。 
 
 # 章节分布：
-
-
-*
-[Introduction](README.md)
+大家领取翻译的章节后，我会把名字标注在每一节的后面， 表示已被人领取，可以选择未被领取的章节进行翻译。
 
 * [spring cloud netflix](chapter1.md)
 
