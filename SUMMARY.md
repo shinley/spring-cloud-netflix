@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [spring cloud netflix](chapter1.md)
-  * [Service Discovery: Eureka Clients](chapter1/service-discovery-eureka-clients.md)
+* [spring cloud netflix](netflix.md)
+  * [Service Discovery: Eureka Clients](netflix/service-discovery-eureka-clients.md)
     * How to Include Eureka Client
     * Registering with Eureka
     * Authenticating with the Eureka Server
@@ -21,16 +21,16 @@
     * Standalone Mode
     * Peer Awareness
     * Prefer IP Address
-  * [Circuit Breaker: Hystrix Clients](chapter1/circuit-breaker-hystrix-clients.md)
+  * [Circuit Breaker: Hystrix Clients](netflix/circuit-breaker-hystrix-clients.md)
     * How to Include Hystrix
     * Propagating the Security Context or using Spring Scopes
     * Health Indicator
     * Hystrix Metrics Stream
-  * [Circuit Breaker: Hystrix Dashboard](chapter1/circuit-breaker-hystrix-dashboard.md)
+  * [Circuit Breaker: Hystrix Dashboard](netflix/circuit-breaker-hystrix-dashboard.md)
     * How to Include Hystrix Dashboard
     * Turbine
     * Turbine Stream
-  * [Client Side Load Balancer: Ribbon](chapter1/client-side-load-balancer-ribbon.md)
+  * [Client Side Load Balancer: Ribbon](netflix/client-side-load-balancer-ribbon.md)
     * How to Include Ribbon
     * Customizing the Ribbon Client
     * Customizing the Ribbon Client using properties
@@ -39,7 +39,7 @@
     * Example: Disable Eureka use in Ribbon
     * Using the Ribbon API Directly
     * Caching of Ribbon Configuration
-  * [Declarative REST Client: Feign](chapter1/declarative-rest-client-feign.md)
+  * [Declarative REST Client: Feign](netflix/declarative-rest-client-feign.md)
     * How to Include Feign
     * Overriding Feign Defaults
     * Creating Feign Clients Manually
@@ -50,7 +50,7 @@
     * Feign request/response compression
     * Feign logging
   * External Configuration: Archaius
-  * [Router and Filter: Zuul](chapter1/router-and-filter-zuul.md)
+  * [Router and Filter: Zuul](netflix/router-and-filter-zuul.md)
     * How to Include Zuul
     * Embedded Zuul Reverse Proxy
     * Zuul Http Client
@@ -63,7 +63,7 @@
     * Plain Embedded Zuul
     * Disable Zuul Filters
     * Providing Hystrix Fallbacks For Routes
-    * [Zuul Developer Guide](chapter1/router-and-filter-zuul/zuul-developer-guide.md)
+    * [Zuul Developer Guide](netflix/router-and-filter-zuul/zuul-developer-guide.md)
       * The Zuul Servlet
       * Zuul RequestContext
       * Custom Zuul Filter examples
@@ -74,17 +74,17 @@
       * Zuul Eager Application Context Loading
   * Polyglot support with Sidecar
   * RxJava with Spring MVC
-  * [Metrics: Spectator, Servo, and Atlas](chapter1/metrics-spectator-servo-and-atlas.md)
+  * [Metrics: Spectator, Servo, and Atlas](netflix/metrics-spectator-servo-and-atlas.md)
     * Dimensional vs. Hierarchical Metrics
     * Default Metrics Collection
-    * [Metrics Collection: Spectator](chapter1/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
+    * [Metrics Collection: Spectator](netflix/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
       * Spectator Counter
       * Spectator Timer
       * Spectator Gauge
       * Spectator Distribution Summaries
       * Metrics Collection: Servo
       * Creating Servo Monitors
-    * [Metrics Backend: Atlas](chapter1/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
+    * [Metrics Backend: Atlas](netflix/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
       * Global tags
       * Using Atlas
     * Retrying Failed Requests
