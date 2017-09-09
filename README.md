@@ -15,9 +15,9 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 # 章节分布：
 大家领取翻译的章节后，我会把名字标注在每一节的后面， 表示已被人领取，可以选择未被领取的章节进行翻译。
 
-* [spring cloud netflix](chapter1.md)
+* [spring cloud netflix](netflix.md)
 
-* [Service Discovery: Eureka Clients](chapter1/service-discovery-eureka-clients.md)
+* [Service Discovery: Eureka Clients](netflix/service-discovery-eureka-clients.md)
 
   - How to Include Eureka Client
 
@@ -55,7 +55,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Prefer IP Address
 
-- [Circuit Breaker: Hystrix Clients](chapter1/circuit-breaker-hystrix-clients.md)
+- [Circuit Breaker: Hystrix Clients](netflix/circuit-breaker-hystrix-clients.md)
 
   - How to Include Hystrix
 
@@ -65,7 +65,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Hystrix Metrics Stream
 
-  - Circuit Breaker: Hystrix Dashboard](chapter1/circuit-breaker-hystrix-dashboard.md)
+  - Circuit Breaker: Hystrix Dashboard](netflix/circuit-breaker-hystrix-dashboard.md)
 
   - How to Include Hystrix Dashboard
 
@@ -73,7 +73,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Turbine Stream
 
-- [Client Side Load Balancer: Ribbon](chapter1/client-side-load-balancer-ribbon.md)
+- [Client Side Load Balancer: Ribbon](netflix/client-side-load-balancer-ribbon.md)
 
   - How to Include Ribbon
 
@@ -91,7 +91,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Caching of Ribbon Configuration
 
-- [Declarative REST Client: Feign](chapter1/declarative-rest-client-feign.md)
+- [Declarative REST Client: Feign](netflix/declarative-rest-client-feign.md)
 
   - How to Include Feign
 
@@ -113,7 +113,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - External Configuration: Archaius
 
-- [Router and Filter: Zuul](chapter1/router-and-filter-zuul.md)
+- [Router and Filter: Zuul](netflix/router-and-filter-zuul.md)
 
   - How to Include Zuul
 
@@ -139,7 +139,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Providing Hystrix Fallbacks For Routes
 
-  - [Zuul Developer Guide](chapter1/router-and-filter-zuul/zuul-developer-guide.md)
+  - [Zuul Developer Guide](netflix/router-and-filter-zuul/zuul-developer-guide.md)
 
   - The Zuul Servlet
 
@@ -161,13 +161,13 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - RxJava with Spring MVC
 
-- [Metrics: Spectator, Servo, and Atlas](chapter1/metrics-spectator-servo-and-atlas.md)
+- [Metrics: Spectator, Servo, and Atlas](netflix/metrics-spectator-servo-and-atlas.md)
 
   - Dimensional vs. Hierarchical Metrics
 
   - Default Metrics Collection
 
-  - [Metrics Collection: Spectator](chapter1/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
+  - [Metrics Collection: Spectator](netflix/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
 
     - Spectator Counter
 
@@ -181,7 +181,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
     - Creating Servo Monitors
 
-   - [Metrics Backend: Atlas](chapter1/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
+   - [Metrics Backend: Atlas](netflix/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
 
       - Global tags
 
