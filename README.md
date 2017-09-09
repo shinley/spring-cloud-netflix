@@ -60,139 +60,139 @@
 
   - How to Include Hystrix
 
-* Propagating the Security Context or using Spring Scopes
+  - Propagating the Security Context or using Spring Scopes
 
-* Health Indicator
+  - Health Indicator
 
-* Hystrix Metrics Stream
+  - Hystrix Metrics Stream
 
-* [Circuit Breaker: Hystrix Dashboard](chapter1/circuit-breaker-hystrix-dashboard.md)
+  - Circuit Breaker: Hystrix Dashboard](chapter1/circuit-breaker-hystrix-dashboard.md)
 
-* How to Include Hystrix Dashboard
+  - How to Include Hystrix Dashboard
 
-* Turbine
+  - urbine
 
-* Turbine Stream
+  - Turbine Stream
 
-* [Client Side Load Balancer: Ribbon](chapter1/client-side-load-balancer-ribbon.md)
+- [Client Side Load Balancer: Ribbon](chapter1/client-side-load-balancer-ribbon.md)
 
-* How to Include Ribbon
+  - How to Include Ribbon
 
-* Customizing the Ribbon Client
+  - Customizing the Ribbon Client
 
-* Customizing the Ribbon Client using properties
+  - Customizing the Ribbon Client using properties
 
-* Using Ribbon with Eureka
+  - Using Ribbon with Eureka
 
-* Example: How to Use Ribbon Without Eureka
+  - Example: How to Use Ribbon Without Eureka
 
-* Example: Disable Eureka use in Ribbon
+  - Example: Disable Eureka use in Ribbon
 
-* Using the Ribbon API Directly
+  - Using the Ribbon API Directly
 
-* Caching of Ribbon Configuration
+  - Caching of Ribbon Configuration
 
-* [Declarative REST Client: Feign](chapter1/declarative-rest-client-feign.md)
+- [Declarative REST Client: Feign](chapter1/declarative-rest-client-feign.md)
 
-* How to Include Feign
+  - How to Include Feign
 
-* Overriding Feign Defaults
+  - Overriding Feign Defaults
 
-* Creating Feign Clients Manually
+  - Creating Feign Clients Manually
 
-* Feign Hystrix Support
+  - Feign Hystrix Support
 
-* Feign Hystrix Fallbacks
+  - Feign Hystrix Fallbacks
 
-* Feign and @Primary
+  - Feign and @Primary
 
-* Feign Inheritance Support
+  - Feign Inheritance Support
 
-* Feign request/response compression
+  - Feign request/response compression
 
-* Feign logging
+  - Feign logging
 
-* External Configuration: Archaius
+  - External Configuration: Archaius
 
-* [Router and Filter: Zuul](chapter1/router-and-filter-zuul.md)
+- [Router and Filter: Zuul](chapter1/router-and-filter-zuul.md)
 
-* How to Include Zuul
+  - How to Include Zuul
 
-* Embedded Zuul Reverse Proxy
+  - Embedded Zuul Reverse Proxy
 
-* Zuul Http Client
+  - Zuul Http Client
 
-* Cookies and Sensitive Headers
+  - Cookies and Sensitive Headers
 
-* Ignored Headers
+  - Ignored Headers
 
-* The Routes Endpoint
+  - he Routes Endpoint
 
-* Strangulation Patterns and Local Forwards
+  - Strangulation Patterns and Local Forwards
 
-* Uploading Files through Zuul
+  - Uploading Files through Zuul
 
-* Query String Encoding
+  - Query String Encoding
 
-* Plain Embedded Zuul
+  - Plain Embedded Zuul
 
-* Disable Zuul Filters
+  - Disable Zuul Filters
 
-* Providing Hystrix Fallbacks For Routes
+  - Providing Hystrix Fallbacks For Routes
 
-* [Zuul Developer Guide](chapter1/router-and-filter-zuul/zuul-developer-guide.md)
+  - [Zuul Developer Guide](chapter1/router-and-filter-zuul/zuul-developer-guide.md)
 
-* The Zuul Servlet
+  - The Zuul Servlet
 
-* Zuul RequestContext
+  - Zuul RequestContext
 
-* Custom Zuul Filter examples
+  - Custom Zuul Filter examples
 
-* How to Write a Pre Filter
+  - How to Write a Pre Filter
 
-* How to Write a Route Filter
+  - How to Write a Route Filter
 
-* How to Write a Post Filter
+  - How to Write a Post Filter
 
-* How Zuul Errors Work
+  - How Zuul Errors Work
 
-* Zuul Eager Application Context Loading
+  - Zuul Eager Application Context Loading
 
-* Polyglot support with Sidecar
+  - Polyglot support with Sidecar
 
-* RxJava with Spring MVC
+  - RxJava with Spring MVC
 
-* [Metrics: Spectator, Servo, and Atlas](chapter1/metrics-spectator-servo-and-atlas.md)
+- [Metrics: Spectator, Servo, and Atlas](chapter1/metrics-spectator-servo-and-atlas.md)
 
-* Dimensional vs. Hierarchical Metrics
+  - Dimensional vs. Hierarchical Metrics
 
-* Default Metrics Collection
+  - Default Metrics Collection
 
-* [Metrics Collection: Spectator](chapter1/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
+  - [Metrics Collection: Spectator](chapter1/metrics-spectator-servo-and-atlas/metrics-collection-spectator.md)
 
-* Spectator Counter
+    - Spectator Counter
 
-* Spectator Timer
+    - Spectator Timer
 
-* Spectator Gauge
+    - Spectator Gauge
 
-* Spectator Distribution Summaries
+    - Spectator Distribution Summaries
 
-* Metrics Collection: Servo
+    - Metrics Collection: Servo
 
-* Creating Servo Monitors
+    - Creating Servo Monitors
 
-* [Metrics Backend: Atlas](chapter1/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
+   - [Metrics Backend: Atlas](chapter1/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
 
-* Global tags
+    - Global tags
 
-* Using Atlas
+    - Using Atlas
 
-* Retrying Failed Requests
+    - Retrying Failed Requests
 
-* Configuration
+    - Configuration
 
-* Zuul
+    - Zuul
 
 
 
