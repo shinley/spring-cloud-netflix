@@ -184,15 +184,15 @@
 
    - [Metrics Backend: Atlas](chapter1/metrics-spectator-servo-and-atlas/metrics-backend-atlas.md)
 
-    - Global tags
+      - Global tags
 
-    - Using Atlas
+      - Using Atlas
 
-    - Retrying Failed Requests
+      - Retrying Failed Requests
 
-    - Configuration
+      - Configuration
 
-    - Zuul
+      - Zuul
 
 
 
