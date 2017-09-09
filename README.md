@@ -20,45 +20,45 @@
 
 * [Service Discovery: Eureka Clients](chapter1/service-discovery-eureka-clients.md)
 
-* How to Include Eureka Client
+  - How to Include Eureka Client
 
-* Registering with Eureka
+  - Registering with Eureka
 
-* Authenticating with the Eureka Server
+  - Authenticating with the Eureka Server
 
-* Status Page and Health Indicator
+  - Status Page and Health Indicator
 
-* Registering a Secure Application
+  - Registering a Secure Application
 
-* Eureka’s Health Checks
+  - Eureka’s Health Checks
 
-* Eureka Metadata for Instances and Clients
+  - Eureka Metadata for Instances and Clients
 
-* Using the EurekaClient
+  - Using the EurekaClient
 
-* Alternatives to the native Netflix EurekaClient
+  - Alternatives to the native Netflix EurekaClient
 
-* Why is it so Slow to Register a Service?
+  - Why is it so Slow to Register a Service?
 
-* Zones
+  - Zones
 
-* Service Discovery: Eureka Server
+  - Service Discovery: Eureka Server
 
-* How to Include Eureka Server
+  - How to Include Eureka Server
 
-* How to Run a Eureka Server
+  - How to Run a Eureka Server
 
-* High Availability, Zones and Regions
+  - High Availability, Zones and Regions
 
-* Standalone Mode
+  - Standalone Mode
 
-* Peer Awareness
+  - Peer Awareness
 
-* Prefer IP Address
+  - Prefer IP Address
 
-* [Circuit Breaker: Hystrix Clients](chapter1/circuit-breaker-hystrix-clients.md)
+- [Circuit Breaker: Hystrix Clients](chapter1/circuit-breaker-hystrix-clients.md)
 
-* How to Include Hystrix
+  - How to Include Hystrix
 
 * Propagating the Security Context or using Spring Scopes
 
