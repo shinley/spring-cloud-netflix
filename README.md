@@ -6,8 +6,9 @@
 
 翻译后的文档不会用于营利目的， 仅供大家交流学习使用。翻译人可以把自已的名字加在自已翻译的章节的大标题下面。由于没办法去跟进每一篇译文的进展，所以为了防止很多文章领取了没有翻译，影响沉别人翻译。 所以长时间没有翻译的，会释放让别人认领。
 
-spring cloud netflix：http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/
-github地址：https://github.com/shinley/spring-cloud-netflix
+spring cloud netflix官方地址：http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/
+
+github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
 大家最好使用gitbook来进行管理草稿，最后可以由gitbook生成电子阅。 
 
