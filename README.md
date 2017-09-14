@@ -10,7 +10,7 @@ spring cloud netflix官方地址：http://cloud.spring.io/spring-cloud-static/sp
 
 github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
-大家最好使用gitbook来进行管理草稿，最后可以由gitbook生成电子阅。 
+一定要使用gitbook支持的markdown语法来书写，最后可以由gitbook生成电子阅。 
 
 # 章节分布：
 大家领取翻译的章节后，我会把名字标注在每一节的后面， 表示已被人领取，可以选择未被领取的章节进行翻译。
@@ -41,7 +41,7 @@ github书稿地址：https://github.com/shinley/spring-cloud-netflix
 
   - Zones
 
-  - Service Discovery: Eureka Server
+- Service Discovery: Eureka Server
 
   - How to Include Eureka Server
 
