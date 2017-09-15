@@ -4,7 +4,7 @@
 
 ### 如何添加Eureka客户端依赖
 
-要在项目中包含Eureka Client，可以添加group Id为`org.springframework.cloud`和artifact Id 为`spring-cloud-starter-eureka`的起步依赖。 有关使用当前Spring Cloud发布版本，设置构建系统的详细信息，请参阅“Spring Cloud Project”页面。
+要在项目中包含Eureka Client，可以添加group Id为`org.springframework.cloud`和artifact Id 为`spring-cloud-starter-eureka`的起步依赖。 有关使用当前Spring Cloud发布版本设置构建系统的详细信息，请参阅“Spring Cloud Project”页面。
 
 ### 注册到Eureka {#registering-with-eureka}
 
@@ -30,6 +30,17 @@ public class Application {
     }
 
 }
+```
+
+\(以上例子，完全是正常的Spring boot应用程序\) 在这个例子中我们使用@EnableEurekaClient注解，但只有Eureka可以使用`@EnableDiscoveryClient`注解。 还需要一些配置来定位Eureka服务器。 例如：
+
+application.yml
+
+```
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 ```
 
 
