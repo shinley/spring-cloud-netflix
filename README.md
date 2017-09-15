@@ -17,7 +17,7 @@ github书稿地址：[https://github.com/shinley/spring-cloud-netflix](https://g
 首先fork我的项目
 
 1. 把fork过去的项目也就是你的项目clone到你的本地
-2. 运行`git remote add netflix git@github.com:shinley/spring-cloud-netfilix.git`把我的库添加为远端库,  其中的add netflix是给远程仓库设置别名。 此处是netflix
+2. 运行`git remote add netflix git@github.com:shinley/spring-cloud-netfilix.git`把我的库添加为远端库,  其中的add netflix是给远程仓库设置别名。 此处的别名是netflix
 3. 运行`git pull netflix master`拉取并合并到本地分支, 拉取我的仓库时，要加上你设置的别名。
 4. 翻译内容
 5. commit后push到自己的库（`git push origin master`）
