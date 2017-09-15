@@ -43,5 +43,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-
+从环境（Environment）中获取的默认应用程序名称（服务ID）、虚拟主机和非安全端口分别是`${spring.application.name}, ${spring.application.name} `和` ${server.port}`
 
