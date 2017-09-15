@@ -32,7 +32,7 @@ public class Application {
 }
 ```
 
-\(以上例子，完全是正常的Spring boot应用程序\) 在这个例子中我们使用@EnableEurekaClient注解，但只有Eureka可以使用`@EnableDiscoveryClient`注解。 还需要一些配置来定位Eureka服务器。 例如：
+\(以上例子，完全是一个标准的Spring boot应用程序\) 在这个例子中我们使用@EnableEurekaClient注解，但只有Eureka可以使用`@EnableDiscoveryClient`注解。 还需要一些配置来定位Eureka服务器。 例如：
 
 application.yml
 
