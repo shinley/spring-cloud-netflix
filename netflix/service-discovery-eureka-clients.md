@@ -49,3 +49,9 @@ where "defaultZone" is a magic string fallback value that provides the service U
 
 从环境（Environment）中获取的默认应用程序名称（服务ID）、虚拟主机和非安全端口分别是`${spring.application.name}, ${spring.application.name}`和`${server.port}`
 
+@EnableEurekaClient使应用程序即是一个Eureka实例（它可以自已注册自已） 又一个客户端，（它可以从注册中心查询定位其它服务）。 它的实例的行为由`eureka.instance.*`配值驱动。但是如果你保证你的程序中有一个`spring.application.name`
+
+（它默认是Euraka的service ID， 或者VIP），那么默认的配值已经很好了。
+
+查看[EurekaInstanceConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.java) 和 [EurekaClientConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java) 以获得更多可配置的选项的详细信息
+
