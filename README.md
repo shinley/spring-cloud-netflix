@@ -4,13 +4,13 @@
 
 通过发issue领取想要翻译的文章，每次领取一章或一节（根据内容长短），翻译完后再领取其他章节。领取完成之后，建议在一个星期内翻译完成，或者自已指定完成的时间，如果不能完成翻译，也欢迎你邀请其他同学和你一起完成翻译。**请谨慎领取.**
 
-翻译后的文档不会用于营利目的， 仅供大家交流学习使用。翻译人可以把自已的名字加在自已翻译的章节的大标题下面。由于没办法去跟进每一篇译文的进展，所以为了防止很多文章领取了没有翻译，影响沉别人翻译。 所以长时间没有翻译的，会释放让别人认领。
+翻译后的文档不会用于营利目的， 仅供大家交流学习使用。翻译人可以把自已的名字加在自已翻译的章节的大标题下面。由于没办法去跟进每一篇译文的进展，所以为了防止很多文章领取了没有翻译，影响别人翻译。 所以长时间没有翻译的，会释放让别人认领。
 
 spring cloud netflix官方地址：[http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/](http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/)
 
 github书稿地址：[https://github.com/shinley/spring-cloud-netflix](https://github.com/shinley/spring-cloud-netflix)
 
-一定要使用gitbook支持的markdown语法来书写，最后可以由gitbook生成电子阅。
+大家最好使用gitbook来进行管理草稿，最后可以由gitbook生成电子阅。
 
 ## 协作流程
 
@@ -25,9 +25,9 @@ github书稿地址：[https://github.com/shinley/spring-cloud-netflix](https://g
 
 1-3是初始化操作，执行一次即可。在翻译前必须执行第3步同步我的库（这样避免冲突），然后执行5-7既可。
 
-# 章节分布：
-
 大家领取翻译的章节后，我会把名字标注在每一节的后面， 表示已被人领取，可以选择未被领取的章节进行翻译。
+
+## 章节分布：
 
 * [spring cloud netflix](netflix.md)
 

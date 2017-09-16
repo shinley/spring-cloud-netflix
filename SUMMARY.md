@@ -3,8 +3,8 @@
 * [Introduction](README.md)
 * [spring cloud netflix](netflix.md)
   * [Service Discovery: Eureka Clients](netflix/service-discovery-eureka-clients.md)
-    * How to Include Eureka Client
-    * Registering with Eureka
+    * [How to Include Eureka Client](netflix/service-discovery-eureka-clients.md#how-to-include-eureka-client)
+    * [Registering with Eureka](/netflix/service-discovery-eureka-clients.md#registering-with-eureka)
     * Authenticating with the Eureka Server
     * Status Page and Health Indicator
     * Registering a Secure Application
