@@ -17,17 +17,17 @@ github书稿地址：[https://github.com/shinley/spring-cloud-netflix](https://g
 首先fork我的项目
 
 1. 把fork过去的项目也就是你的项目clone到你的本地
-2. 运行`git remote add netflix git@github.com:shinley/spring-cloud-netfilix.git`把我的库添加为远端库,  其中的add netflix是给远程仓库设置别名。 此处的别名是netflix
+2. 运行`git remote add netflix git@github.com:shinley/spring-cloud-netfilix.git`把我的库添加为远端库, 其中的add netflix是给远程仓库设置别名。 此处的别名是netflix
 3. 运行`git pull netflix master`拉取并合并到本地分支, 拉取我的仓库时，要加上你设置的别名。
 4. 翻译内容
 5. commit后push到自己的库（`git push origin master`）
 6. 登录Github在你首页可以看到一个`pull request`按钮，点击它，填写一些说明信息，然后提交即可。
 
-1~3是初始化操作，执行一次即可。在翻译前必须执行第4步同步我的库（这样避免冲突），然后执行5~7既可。
-
-## 章节分布：
+1-3是初始化操作，执行一次即可。在翻译前必须执行第3步同步我的库（这样避免冲突），然后执行5-7既可。
 
 大家领取翻译的章节后，我会把名字标注在每一节的后面， 表示已被人领取，可以选择未被领取的章节进行翻译。
+
+## 章节分布：
 
 * [spring cloud netflix](netflix.md)
 
@@ -55,7 +55,7 @@ github书稿地址：[https://github.com/shinley/spring-cloud-netflix](https://g
 
   * Zones
 
-  * Service Discovery: Eureka Server
+* Service Discovery: Eureka Server
 
   * How to Include Eureka Server
 
