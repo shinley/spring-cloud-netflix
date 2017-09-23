@@ -56,7 +56,7 @@ where "defaultZone" is a magic string fallback value that provides the service U
 
 ### 认证Eureka服务
 
-如果其中一个`eureka.client.serviceUrl.defaultZone`URL中嵌入了凭证（如：http://user:password@localhost:8761/eureka），则HTTP基本身份验证将自动添加到您的eureka客户端。对于更复杂的需求，您可以创建一个类型为\`DiscoveryClientOptionalArgs\`的@Bean，并将\`ClientFilter\`实例注入到其中，所有这些都将应用于从客户端到服务器的调用。
+如果其中一个`eureka.client.serviceUrl.defaultZone`URL中嵌入了凭证（如：[http://user:password@localhost:8761/eureka），则HTTP基本身份验证将自动添加到您的eureka客户端。对于更复杂的需求，您可以创建一个类型为\`DiscoveryClientOptionalArgs\`的@Bean，并将\`ClientFilter\`实例注入到其中，所有这些都将应用于从客户端到服务器的调用。](http://user:password@localhost:8761/eureka），则HTTP基本身份验证将自动添加到您的eureka客户端。对于更复杂的需求，您可以创建一个类型为`DiscoveryClientOptionalArgs`的@Bean，并将`ClientFilter`实例注入到其中，所有这些都将应用于从客户端到服务器的调用。)
 
 > **注意**：
 >
@@ -77,7 +77,7 @@ eureka:
 
 这些链接显示在客户端的元数据中，并在某些情况下用于决定是否将请求发送到应用程序，因此正确的配置它们是非常有用的。
 
-### 注册安全应用程序
+### 注册安全的应用程序
 
 如果你的应用程序想要通过HTTPS调用，您可以在`EurekaInstanceConfig`配置中，通过`eureka.instanc.[nonSecurePortEnabled，securePortEnabled] = [false，true]`设置两个标志。 这将使Eureka发布的实例信息明确使用安全通信机制。 Spring Cloud `DiscoveryClient`将始终返回一个https://...; 以这种方式配置的服务的URI，以及Eureka（本机）实例信息将具有安全的健康检查URL。
 
@@ -101,7 +101,7 @@ eureka:
 >
 > 如果应用程序在代理后面运行，并且SSL终止在代理中（例如，如果你在Cloud Foundry或其他平台上运行作为服务），那么你需要确保代理“forwarded”的报头被应用程序截获和处理。Spring Boot应用程序中的嵌入式Tomcat容器会自动执行“X-Forwarded-\\*”头的显式配置。如果弄错了这个标志，你的应用程序本身所呈现的链接将是错误的（错误的主机，端口或协议）。
 
-### Eureka的健康检查
+### Eureka的健康检查 {#eureka-health-check}
 
 默认情况下， Eureka使用客户端的心跳决定一个客户端是否“存活”（“UP”状态），
 

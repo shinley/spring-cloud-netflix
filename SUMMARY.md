@@ -7,8 +7,8 @@
     * [Registering with Eureka](/netflix/service-discovery-eureka-clients.md#registering-with-eureka)
     * [Authenticating with the Eureka Server](netflix/authenticating-with-the-eureka-server.md)
     * Status Page and Health Indicator
-    * Registering a Secure Application
-    * Eureka’s Health Checks
+    * [Registering a Secure Application](netflix/registering-a-secure-application.md)
+    * [Eureka’s Health Checks](netflix/service-discovery-eureka-clients.md#eureka-health-check)
     * Eureka Metadata for Instances and Clients
     * Using the EurekaClient
     * Alternatives to the native Netflix EurekaClient
