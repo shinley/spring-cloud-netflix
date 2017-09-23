@@ -196,23 +196,26 @@ public String serviceUrl() {
 
 ### Native Netflix EurekaClient的替代方案
 
+并不是必须要使用原生的Netflix EurekaClient, 通常封装后的使用起来更方便。Spring Cloud支持Feign（一个REST客户端构建器）以及Spring RestTemplate，它使用逻辑Eureka服务标识符（VIP）而不是物理URL。要使用固定的物理服务器列表配置功能区，您可以将&lt;client&gt;.ribbon.listOfServers设置为以逗号分隔的物理地址（或主机名）列表，其中&lt;client&gt;是客户端的ID。
 
+您还可以使用org.springframework.cloud.client.discovery.DiscoveryClient，它为Netflix不是特定的发现客户端提供一个简单的API，例如:
 
+```
+@Autowired
+private DiscoveryClient discoveryClient;
 
+public String serviceUrl() {
+    List<ServiceInstance> list = discoveryClient.getInstances("STORES");
+    if (list != null && list.size() > 0 ) {
+        return list.get(0).getUri();
+    }
+    return null;
+}
+```
 
+### 为什么注册服务这么慢？
 
-
-
-
-
-
-
-
-
-
-
-
-
+作为一个实例包括定期心跳到注册中心（通过客户端的serviceUrl），默认持续时间为30秒。注册中心服务器和客户端在本地缓存中都具有相同的元数据（因此可能需要3个心跳），客户端才能发现服务。您可以使用eureka.instance.leaseRenewalIntervalInSeconds更改期限，这将加快将客户端连接到其他服务的过程。在生产中，最好遵守默认值，因为服务器内部有一些计算可以对租赁更新期进行假设。
 
 
 
