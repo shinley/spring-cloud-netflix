@@ -103,5 +103,38 @@ eureka:
 
 ### Eureka的健康检查 {#eureka-health-check}
 
-默认情况下， Eureka使用客户端的心跳决定一个客户端是否“存活”（“UP”状态），
+默认情况下， Eureka使用客户端的心跳决定一个客户端是否“存活”（“UP”状态），除非特别声明Discovery Client不根据Spring Boot Actuator传播应用程序的当前运行状况检查状态。这也就是说客户端注册成功后，Eureka将永远宣布应用程序处于“UP”状态。通过启用Eureka的健康检查可以改变这种行为，从而将应用程序状态传播给Eureka。因此，每个其他应用程序将不会向“UP”状态以外的应用程序发送请求。
+
+application.yml
+
+```
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+```
+
+**WARNNING:**
+
+`eureka.client.healthcheck.enabled=true` 只能设置在`application.yml`配置文件中， 设置在`bootstrap.yml`中将导致不可预知的问题，比如会导致注册到Eureka中的应用为UNKNOW状态。
+
+如如果你想自已控制健康检查， 你可以考虑实现你自已的`com.netflix.appinfo.HealthCheckHandler`。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
