@@ -192,5 +192,5 @@ public String serviceUrl() {
 
 **注意：**
 
-不要在`@PostConstruct`注解的方法或`@Scheduled`注解的方法上（或者ApplicationContext可能还没有被启动的任何地方）使用EurekaClient。它在SmartLifecycle中进行初始化（阶段= 0），所以您可以依赖它的最早可用在另一个具有较高阶段的SmartLifecycle中。
+不要在`@PostConstruct`注解的方法或`@Scheduled`注解的方法上（或者ApplicationContext可能还没有被启动的任何地方）使用EurekaClient。它在SmartLifecycle中进行初始化（阶段= 0），所以您可以依赖它的最早可用在另一个具有较高阶段SmartLifecycle中。
 
