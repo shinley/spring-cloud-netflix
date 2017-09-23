@@ -14,7 +14,7 @@
     * Alternatives to the native Netflix EurekaClient
     * Why is it so Slow to Register a Service?
     * Zones
-  * Service Discovery: Eureka Server
+  * [Service Discovery: Eureka Server](netflix/service-discovery-eureka-server.md)
     * How to Include Eureka Server
     * How to Run a Eureka Server
     * High Availability, Zones and Regions
