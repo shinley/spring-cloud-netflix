@@ -122,6 +122,23 @@ eureka:
 
 
 
+### 服务实例和客户端注册到Eureka的元数据
+
+很值得花一点时间了解Eureka的元数据是如何工作的， 所以你可以在你的平台上使用这些元数据。有一些标准的元数据比如：IP地址、端口号、状态页和健康检查。它们被发布到注册中心，并且被客户端使用，来直接访问服务提供者。 额外的元素据可以添加到注册实例的eureka.instance.metadataMap中，这些信息可以被远程 的客户端访问， 但是一般不会改变客户端的行为，除非知道元数据的含义。下面介绍几种特殊情况， Spring Cloud已经为元数据ma赋于了含义。
+
+#### 在Cloudfoundry上使用Eureka
+
+Cloudfoundry有一个全局路由器，所以同一个应用程序的所有实例都具有相同的主机名（在具有相似架构的其他PaaS解决方案中也是如此）。这不一定是使用Eureka的障碍，但是如果您使用路由器（建议，甚至是强制性的，具体取决于您的平台的设置方式），则需要明确设置主机名和端口号（安全或不安全）），以便他们使用路由器。您可能还需要使用实例元数据，以便您可以区分客户端上的实例（例如，在自定义负载均衡器中）。默认情况下，eureka.instance.instanceId就是vcap.application.instance\_id。例如：
+
+application.yml
+
+```
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+```
+
 
 
 
