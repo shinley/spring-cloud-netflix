@@ -176,6 +176,34 @@ eureka:
 
 使用这个元数据和在localhost上部署的多个服务实例，随机值将会生效，以使实例是唯一的。在Cloudfoundry中，vcap.application.instance\_id将在Spring Boot应用程序中自动填充，因此不需要随机值。
 
+### 使用Eureka客户端
+
+一旦你的应用使用了`@EnableDiscoveryClient`（或者`@EnableEurekaClient`）， 你就可以使用它从Eureka Server发现服务实例。一种方法是使用本机com.netflix.discovery.EurekaClient（与Spring Cloud DiscoveryClient相反）。比如：
+
+```
+@Autowired
+private EurekaClient discoveryClient;
+
+public String serviceUrl() {
+    InstanceInfo instance = discoveryClient.getNextServerFromEureka("STORES", false);
+    return instance.getHomePageUrl();
+}
+```
+
+
+
+**注意：**
+
+不要在`@PostConstruct`注解方的法或`@Scheduled`注解的方法上（或者ApplicationContext可能还没有被启动的任何地方）使用EurekaClient。它在SmartLifecycle中进行初始化（阶段= 0），所以您可以依赖它的最早可用在另一个具有较高阶段的SmartLifecycle中。
+
+
+
+
+
+
+
+
+
 
 
 
