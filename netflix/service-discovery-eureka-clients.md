@@ -54,7 +54,7 @@ where "defaultZone" is a magic string fallback value that provides the service U
 
 查看[EurekaInstanceConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.java) 和 [EurekaClientConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java) 以获得更多可配置的选项的详细信息
 
-### 认证Eureka服务
+### 认证Eureka服务 {#auth-with-eureka}
 
 如果其中一个`eureka.client.serviceUrl.defaultZone`URL中嵌入了凭证（如：[http://user:password@localhost:8761/eureka），则HTTP基本身份验证将自动添加到您的eureka客户端。对于更复杂的需求，您可以创建一个类型为\`DiscoveryClientOptionalArgs\`的@Bean，并将\`ClientFilter\`实例注入到其中，所有这些都将应用于从客户端到服务器的调用。](http://user:password@localhost:8761/eureka），则HTTP基本身份验证将自动添加到您的eureka客户端。对于更复杂的需求，您可以创建一个类型为`DiscoveryClientOptionalArgs`的@Bean，并将`ClientFilter`实例注入到其中，所有这些都将应用于从客户端到服务器的调用。)
 
@@ -62,7 +62,7 @@ where "defaultZone" is a magic string fallback value that provides the service U
 >
 > 由于Eureka的限制，不可能支持每个服务器的基本身份验证凭据，因此只有第一个被找到的被使用。
 
-## 状态页和健康指标
+## 状态页和健康指标 {#status-page-and-health-indicator}
 
 Eureka实例的状态页面和运行状况指示器，默认情况下分别为“/ info”和“/ health”，它们是Spring Boot Actuator应用程序中有用端点的默认位置。 如果您使用非默认上下文路径或servlet路径（例如`server.servletPath = /foo`）或管理端点路径（例如`management.contextPath = /admin`），则需要更改这些，即使是执行程序应用程序。 例：
 
