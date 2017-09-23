@@ -217,11 +217,25 @@ public String serviceUrl() {
 
 作为一个实例包括定期心跳到注册中心（通过客户端的serviceUrl），默认持续时间为30秒。注册中心服务器和客户端在本地缓存中都具有相同的元数据（因此可能需要3个心跳），客户端才能发现服务。您可以使用eureka.instance.leaseRenewalIntervalInSeconds更改期限，这将加快将客户端连接到其他服务的过程。在生产中，最好遵守默认值，因为服务器内部有一些计算可以对租赁更新期进行假设。
 
+### 区 （Zones） {#_zones}
 
+如果您将Eureka客户端部署到多个区域，您可能希望这些客户端在同一区域内利用其他区域中的服务。为此，您需要正确配置您的Eureka客户端。
 
+首先，你需要确保将Eureka服务器部署到每个区域，并且它们是彼此的对等体。有关详细信息，请参阅zones和regions部分。接下来，你需要告诉Eureka您的服务所在的区域。您可以使用metadataMap属性来执行此操作。例如，如果将`service1`部署到`zone1`和`zone2`，则需要在`service1`中设置以下Eureka属性
 
+**Service 1 in Zone 1**
 
+```
+eureka.instance.metadataMap.zone = zone1
+eureka.client.preferSameZoneEureka = true
+```
 
+**Service 1 in Zone 2**
+
+```
+eureka.instance.metadataMap.zone = zone2
+eureka.client.preferSameZoneEureka = true
+```
 
 
 
