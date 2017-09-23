@@ -120,8 +120,6 @@ eureka:
 
 如如果你想自已控制健康检查， 你可以考虑实现你自已的`com.netflix.appinfo.HealthCheckHandler`。
 
-
-
 ### 服务实例和客户端注册到Eureka的元数据
 
 很值得花一点时间了解Eureka的元数据是如何工作的， 所以你可以在你的平台上使用这些元数据。有一些标准的元数据比如：IP地址、端口号、状态页和健康检查。它们被发布到注册中心，并且被客户端使用，来直接访问服务提供者。 额外的元素据可以添加到注册实例的eureka.instance.metadataMap中，这些信息可以被远程 的客户端访问， 但是一般不会改变客户端的行为，除非知道元数据的含义。下面介绍几种特殊情况， Spring Cloud已经为元数据ma赋于了含义。
@@ -139,17 +137,44 @@ eureka:
     nonSecurePort: 80
 ```
 
+根据Cloudfoundry实例中安全规则的设置方式，您可以注册并使用主机VM的IP地址进行直接的服务到服务调用。此功能尚未在Pivotal Web Services（PWS）上提供。
 
+### 在AWS上使用Eureka
 
+如果计划将应用程序部署到AWS云端，则Eureka实例必须配置为AWS感知，这可以通过以下方式定制EurekaInstanceConfigBean来完成：
 
+```
+@Bean
+@Profile("!default")
+public EurekaInstanceConfigBean eurekaInstanceConfig(InetUtils inetUtils) {
+  EurekaInstanceConfigBean b = new EurekaInstanceConfigBean(inetUtils);
+  AmazonInfo info = AmazonInfo.Builder.newBuilder().autoBuild("eureka");
+  b.setDataCenterInfo(info);
+  return b;
+}
+```
 
+### 修改Eureka的Instance ID
 
+Netflix Eureka实例注册了与其主机名相同的ID（即每个主机只有一个服务）。Spring Cloud Eureka提供了一个明智的默认，如下所示：
 
+`${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}}`.
 
+比如：`myhost:myappname:8080`.
 
+使用Spring Cloud可以通过在eureka.instance.instanceId中提供唯一的标识符来覆盖此方法。
 
+例如：
 
+application.yml
 
+```
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+```
+
+使用这个元数据和在localhost上部署的多个服务实例，随机值将会生效，以使实例是唯一的。在Cloudfoundry中，vcap.application.instance\_id将在Spring Boot应用程序中自动填充，因此不需要随机值。
 
 
 
