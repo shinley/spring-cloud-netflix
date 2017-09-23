@@ -77,7 +77,7 @@ eureka:
 
 这些链接显示在客户端的元数据中，并在某些情况下用于决定是否将请求发送到应用程序，因此正确的配置它们是非常有用的。
 
-### 注册安全的应用程序
+### 注册安全的应用程序 {#register-secure-app}
 
 如果你的应用程序想要通过HTTPS调用，您可以在`EurekaInstanceConfig`配置中，通过`eureka.instanc.[nonSecurePortEnabled，securePortEnabled] = [false，true]`设置两个标志。 这将使Eureka发布的实例信息明确使用安全通信机制。 Spring Cloud `DiscoveryClient`将始终返回一个https://...; 以这种方式配置的服务的URI，以及Eureka（本机）实例信息将具有安全的健康检查URL。
 
